@@ -1,15 +1,9 @@
-# Umeed-e-Sahar — Homepage v1
+# Umeed-e-Sahar v2
 
-A first complete homepage for the student-run publication اُمیدِ سحر / UMEED-E-SAHAR.
+A static, Netlify-ready version of Umeed-e-Sahar with a blood-red / antique-gold visual identity, Urdu typography, Pakistani cultural framing, a journal archive, sample article page and About page.
 
-## Included
-- `index.html`
-- `style.css`
-- `script.js`
-- `assets/umeed-sun.jpg`
+## Deploy
+Drag this folder into Netlify Drop, or connect the repository to Netlify for automatic deployments.
 
-## GitHub Pages
-1. Create a public repository called `umeed-e-sahar`.
-2. Upload the files/folders in this package.
-3. Go to Settings → Pages.
-4. Choose Deploy from a branch → `main` → `/ (root)` → Save.
+## Important
+The sample article and historical snippets are prototype editorial copy for design purposes. Replace them with researched, sourced material before publication.
