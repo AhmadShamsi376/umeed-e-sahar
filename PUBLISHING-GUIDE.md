@@ -1,14 +1,14 @@
-# Publishing Umeed-e-Sahar
+# Umeed-e-Sahar V5 — Publishing Guide
 
-You do NOT edit index.html to publish.
+## One-time website setup
+1. Upload the complete folder contents to the GitHub repository `AhmadShamsi376/umeed-e-sahar`.
+2. Keep `admin/`, `assets/`, and `content/` as folders.
+3. Keep `content/articles/` and `content/poetry/` nested inside `content/`.
+4. Keep the Netlify site connected to the GitHub repository.
+5. Open `/admin/` after the GitHub authentication/OAuth step is configured.
 
-Use the Editorial Desk:
-1. Open your live website.
-2. Add `/admin/` to the end.
-3. Sign in.
-4. New Article / New Poetry.
-5. Write, add a cover image, and publish.
+## Publishing
+Use the Editorial Desk to create an Article or Poetry item. Uploaded images go into `assets/images/uploads`.
 
-For contributors without CMS access, they can send their piece to the editors and an editor publishes it.
-
-The public website discovers Markdown content directly from the GitHub repository.
+## Important
+The visual site is fully static and the CMS configuration is included, but GitHub/Netlify authentication for Decap CMS is a one-time deployment setting and must be configured before the Editorial Desk can commit new content.
