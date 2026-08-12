@@ -1,0 +1,49 @@
+backend:
+  name: github
+  repo: AhmadShamsi376/umeed-e-sahar
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+site_url: "https://gleaming-semifreddo-903afc.netlify.app"
+
+collections:
+  - name: "articles"
+    label: "Journal Articles"
+    folder: "content/articles"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Urdu Title (optional)", name: "urdu_title", widget: "string", required: false}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
+      - label: "Section"
+        name: "section"
+        widget: "select"
+        options:
+          - "Society"
+          - "Economics"
+          - "History"
+          - "Education"
+          - "Culture"
+          - "Pakistan"
+          - "Literature"
+      - {label: "Cover Image", name: "image", widget: "image", required: false}
+      - {label: "Excerpt", name: "excerpt", widget: "text", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "poetry"
+    label: "Poetry / گوشۂ سخن"
+    folder: "content/poetry"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Urdu Title", name: "urdu_title", widget: "string", required: false}
+      - {label: "Poet / Author", name: "author", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
+      - {label: "Cover Image", name: "image", widget: "image", required: false}
+      - {label: "Excerpt", name: "excerpt", widget: "text", required: false}
+      - {label: "Poem", name: "body", widget: "markdown"}
